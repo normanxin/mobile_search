@@ -2,7 +2,7 @@ class CreateApps < ActiveRecord::Migration
   def self.up
     create_table :apps do |t|
       t.string :name
-      t.text :description, :limit=>nil
+      t.text :description
       t.string :publisher
       t.string :image_url
       t.integer :counter
