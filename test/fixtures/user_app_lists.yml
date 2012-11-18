@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  app_id: 1
+  recommendation: false
+  usage: 1
+
+two:
+  user_id: 1
+  app_id: 1
+  recommendation: false
+  usage: 1

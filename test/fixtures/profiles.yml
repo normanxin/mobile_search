@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  type: MyString
+  health: 1
+  productivity: 1
+  education: 1
+  lifestyle: 1
+  social: 1
+  game: 1
+  whether: 1
+
+two:
+  user_id: 1
+  type: MyString
+  health: 1
+  productivity: 1
+  education: 1
+  lifestyle: 1
+  social: 1
+  game: 1
+  whether: 1

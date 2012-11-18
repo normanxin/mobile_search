@@ -1,4 +1,14 @@
 MobileSearch::Application.routes.draw do
+  match 'api/app_by_id' => 'api#app_by_id'
+  match 'api/app_all' => 'api#app_all'
+  match 'api/app_by_recommendation' => 'api#app_by_recommendation'
+  match 'api/user_by_id' => 'api#user_by_id'
+  match 'api/user_all' => 'api#user_all'
+  match 'api/friend_by_user_id' => 'api#friend_by_user_id'
+  match 'api/profile_by_user_id' => 'api#profile_by_user_id'
+  match 'api/profile_update_by_user_id' => 'api#profile_update_by_user_id'
+  match 'api/user_app_list_by_user_id' => 'api#user_app_list_by_user_id'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+seed_file = File.join(Rails.root, 'db', 'seed.yml')
+config = YAML::load_file(seed_file)
+App.create(config["apps"])
+User.create(config["users"])
+Profile.create(config["profiles"])
+UserAppList.create(config["user_app_lists"])

@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  publisher: MyString
+  image_url: MyString
+  counter: 1
+  category: MyString
+
+two:
+  name: MyString
+  description: MyString
+  publisher: MyString
+  image_url: MyString
+  counter: 1
+  category: MyString
