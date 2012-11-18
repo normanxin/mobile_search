@@ -63,7 +63,7 @@ class ApiController < ApplicationController
 
   def user_by_id
     @user = User.find(params[:id])
-    responsd_to do |format|
+    respond_to do |format|
       format.json {render :json=>@user }
     end
   end
