@@ -1,6 +1,6 @@
 apps:
 - name: Angry Birds
-  description: Use the unique powers of the Angry Birds to destroy the greedy pigs' fortresses! The survival of the Angry Birds is at stake. Dish out revenge on the greedy pigs who stole their eggs. Use the unique powers of each bird to destroy the pigs’ defenses. Angry Birds features challenging physics-based gameplay and hours of replay value. Each level requires logic, skill, and force to solve.
+  description: Use the unique powers of the Angry Birds to destroy the greedy pigs' fortresses! The survival of the Angry Birds is at stake.
   publisher: ROVIO MOBILE LTD
   image_url: http://lh3.ggpht.com/pq8OCpcD1AP5QhN7kZT_5zeTTmGCdG9zFDXVXPuybVDsbhhaq7uxbTDZduSMxqusn14=w124
   counter: 0
@@ -9,7 +9,7 @@ apps:
   updated_at: 2012-01-01 18:00:00 Z
   id: 1
 - name: MINECRAFT
-  description: Minecraft is about placing blocks to build things and going on adventures!Pocket Edition includes randomly generated worlds, multiplayer over a local Wi-Fi network, and Survival and Creative modes. You can craft and create with your friends anywhere in the world so long as you have hands spare and battery to burn.
+  description: Minecraft is about placing blocks to build things and going on adventures!
   publisher: Mojang
   image_url: http://lh3.ggpht.com/wnJIWJ7KlHhOR2rnu3BhZMZ90YdulOLNiNg6DEXlBQPgf7S9ddJ5-E97HGsXapMapvI=w124
   counter: 0
@@ -18,7 +18,7 @@ apps:
   updated_at: 2012-01-01 18:00:00 Z
   id: 2
 - name: Fruit Ninja
-  description: The worldwide smash hit game Fruit Ninja is now available on Android!Fruit Ninja is a juicy action game with squishy, splatty and satisfying fruit carnage! Become the ultimate bringer of sweet, tasty destruction with every slash.
+  description: The worldwide smash hit game Fruit Ninja is now available on Android!Fruit Ninja is a juicy action game with squishy, splatty and satisfying fruit carnage!
   publisher: Mojang
   image_url: http://lh4.ggpht.com/tB2KAS82FElbjDNlni7VNDT1lDaNDT_VfTjZhBVyu07o3o328GDBdrcR1YC4PUb3OP8=w124
   counter: 0
