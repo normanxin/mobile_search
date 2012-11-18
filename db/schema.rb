@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(:version => 20121118045459) do
 
   create_table "apps", :force => true do |t|
     t.string   "name"
-    t.string   "description"
+    t.text     "description", :limit => 255
     t.string   "publisher"
     t.string   "image_url"
     t.integer  "counter"
