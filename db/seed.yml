@@ -7,6 +7,13 @@ apps:
   category: game
   created_at: 2012-01-01 18:00:00 Z
   updated_at: 2012-01-01 18:00:00 Z
+  google_play_id: unkonwn
+  google_play_lower_counter: unknown
+  app_version: unknown
+  date_published: unknown
+  android_version_required: unknown
+  price: 0
+  rating: 4.5
   id: 1
 - name: MINECRAFT
   description: Minecraft is about placing blocks to build things and going on adventures!
@@ -16,6 +23,13 @@ apps:
   category: game
   created_at: 2012-01-01 18:00:00 Z
   updated_at: 2012-01-01 18:00:00 Z
+  google_play_id: unkonwn
+  google_play_lower_counter: unknown
+  app_version: unknown
+  date_published: unknown
+  android_version_required: unknown
+  price: 0
+  rating: 4.5
   id: 2
 - name: Fruit Ninja
   description: The worldwide smash hit game Fruit Ninja is now available on Android!Fruit Ninja is a juicy action game with squishy, splatty and satisfying fruit carnage!
@@ -25,6 +39,13 @@ apps:
   category: game
   created_at: 2012-01-01 18:00:00 Z
   updated_at: 2012-01-01 18:00:00 Z
+  google_play_id: unkonwn
+  google_play_lower_counter: unknown
+  app_version: unknown
+  date_published: unknown
+  android_version_required: unknown
+  price: 0
+  rating: 4.5
   id: 3
 
 users:

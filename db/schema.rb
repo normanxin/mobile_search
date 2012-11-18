@@ -21,6 +21,13 @@ ActiveRecord::Schema.define(:version => 20121118045459) do
     t.string   "category"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "google_play_id"
+    t.string   "google_play_lower_counter"
+    t.string   "app_version"
+    t.string   "date_published"
+    t.string   "android_version_required"
+    t.string   "price"
+    t.float    "rating"
   end
 
   create_table "comments", :force => true do |t|
