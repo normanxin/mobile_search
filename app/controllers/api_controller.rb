@@ -77,7 +77,7 @@ class ApiController < ApplicationController
 
   def friend_by_user_id
     @friends = User.where(:user_id => params[:user_id])
-    response_to do |format|
+    respond_to do |format|
       format.json {render :json=>@friends }
     end
   end
