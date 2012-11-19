@@ -1,0 +1,159 @@
+apps:
+- name: Angry Birds
+  description: Use the unique powers of the Angry Birds to destroy the greedy pigs' fortresses! The survival of the Angry Birds is at stake.
+  publisher: ROVIO MOBILE LTD
+  image_url: http://lh3.ggpht.com/pq8OCpcD1AP5QhN7kZT_5zeTTmGCdG9zFDXVXPuybVDsbhhaq7uxbTDZduSMxqusn14=w124
+  counter: 0
+  category: game
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  google_play_id: unkonwn
+  google_play_lower_counter: unknown
+  app_version: unknown
+  date_published: unknown
+  android_version_required: unknown
+  price: 0
+  rating: 4.5
+  id: 1
+- name: MINECRAFT
+  description: Minecraft is about placing blocks to build things and going on adventures!
+  publisher: Mojang
+  image_url: http://lh3.ggpht.com/wnJIWJ7KlHhOR2rnu3BhZMZ90YdulOLNiNg6DEXlBQPgf7S9ddJ5-E97HGsXapMapvI=w124
+  counter: 0
+  category: game
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  google_play_id: unkonwn
+  google_play_lower_counter: unknown
+  app_version: unknown
+  date_published: unknown
+  android_version_required: unknown
+  price: 0
+  rating: 4.5
+  id: 2
+- name: Fruit Ninja
+  description: The worldwide smash hit game Fruit Ninja is now available on Android!Fruit Ninja is a juicy action game with squishy, splatty and satisfying fruit carnage!
+  publisher: Mojang
+  image_url: http://lh4.ggpht.com/tB2KAS82FElbjDNlni7VNDT1lDaNDT_VfTjZhBVyu07o3o328GDBdrcR1YC4PUb3OP8=w124
+  counter: 0
+  category: game
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  google_play_id: unkonwn
+  google_play_lower_counter: unknown
+  app_version: unknown
+  date_published: unknown
+  android_version_required: unknown
+  price: 0
+  rating: 4.5
+  id: 3
+
+users:
+- name: Alice
+  gender: Female
+  age: 21
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  id: 1
+- name: Bob
+  gender: Male
+  age: 20
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  id: 2
+- name: Chris
+  gender: Female
+  age: 25
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  id: 3
+
+profiles:
+- user_id: 1
+  profile_type: home
+  health: 0
+  productivity: 0
+  education: 0
+  lifestyle: 0
+  social: 0
+  game: 2
+  weather: 0
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  id: 1
+- user_id: 1
+  profile_type: work
+  health: 0
+  productivity: 0
+  education: 0
+  lifestyle: 0
+  social: 0
+  game: 2
+  weather: 0
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  id: 2
+- user_id: 2
+  profile_type: home
+  health: 0
+  productivity: 0
+  education: 0
+  lifestyle: 0
+  social: 0
+  game: 1
+  weather: 0
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  id: 3
+- user_id: 3
+  profile_type: home
+  health: 0
+  productivity: 0
+  education: 0
+  lifestyle: 0
+  social: 0
+  game: 1
+  weather: 0
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  id: 4
+
+user_app_lists:
+- user_id: 1
+  app_id: 1
+  recommendation: true
+  usage: 5
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  id: 1
+- user_id: 1
+  app_id: 2
+  recommendation: false
+  usage: 3
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  id: 2
+- user_id: 2
+  app_id: 3
+  recommendation: true
+  usage: 7
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  id: 3
+- user_id: 2
+  app_id: 1
+  recommendation: false
+  usage: 5
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  id: 4
+- user_id: 3
+  app_id: 1
+  recommendation: false
+  usage: 1
+  created_at: 2012-01-01 18:00:00 Z
+  updated_at: 2012-01-01 18:00:00 Z
+  id: 5
+
+
+
