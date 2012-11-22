@@ -117,7 +117,7 @@ class ApiController < ApplicationController
   def app_search_by_keyword
     query = "%"+params[:keyword]+"%"
 
-    @apps = App.where("name LIKE ? OR description LIKE ? OR publisher LIKE ? OR category LIKE ?",query,query,query,query)
+    @apps = App.where("name ILIKE ? OR description ILIKE ? OR publisher ILIKE ? OR category ILIKE ?",query,query,query,query)
     #@apps = App.where("name ILIKE ?",query)
     #@apps = App.where("name LIKE ?",query)
     respond_to do |format|
