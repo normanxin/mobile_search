@@ -114,5 +114,16 @@ class ApiController < ApplicationController
     end
   end
 
+  def app_search_by_keyword
+    query = "%"+params[:keyword]+"%"
+
+    @apps = App.where("name LIKE ? OR description LIKE ? OR publisher LIKE ? OR category LIKE ?",query,query,query,query)
+    #@apps = App.where("name ILIKE ?",query)
+    #@apps = App.where("name LIKE ?",query)
+    respond_to do |format|
+      format.json {render :json=>@apps }
+    end
+  end
+
 
 end

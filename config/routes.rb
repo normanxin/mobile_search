@@ -8,6 +8,7 @@ MobileSearch::Application.routes.draw do
   match 'api/profile_by_user_id' => 'api#profile_by_user_id'
   match 'api/profile_update_by_user_id' => 'api#profile_update_by_user_id'
   match 'api/user_app_list_by_user_id' => 'api#user_app_list_by_user_id'
+  match 'api/app_search_by_keyword' => 'api#app_search_by_keyword'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
