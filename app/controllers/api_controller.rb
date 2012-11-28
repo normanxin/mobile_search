@@ -125,5 +125,71 @@ class ApiController < ApplicationController
     end
   end
 
+  def app_search_by_keyword_with_usage
+    query = "%"+params[:keyword]+"%"
+
+    @apps = App.where("name ILIKE ? OR description ILIKE ? OR publisher ILIKE ? OR category ILIKE ?",query,query,query,query)
+    #@apps = App.where("name LIKE ? OR description LIKE ? OR publisher LIKE ? OR category LIKE ?",query,query,query,query)
+
+    #@apps = App.where("name ILIKE ?",query)
+    #@apps = App.where("name LIKE ?",query)
+
+
+    #profile = Profile.find(params[:user_id])
+    counter_all = params[:health].to_f +
+                  params[:productivity].to_f +
+                  params[:education].to_f +
+                  params[:lifestyle].to_f +
+                  params[:social].to_f +
+                  params[:game].to_f +
+                  params[:weather].to_f
+
+        @apps.each do |app|
+           app[:weight] = calculate_prob(app,counter_all)
+          app[:counter_all] = counter_all
+        end
+
+        @apps = @apps.sort_by{|a| -a[:weight]}
+         #puts(counter_all)
+
+
+    #    t.integer  "health"
+    #t.integer  "productivity"
+    #t.integer  "education"
+    #t.integer  "lifestyle"
+    #t.integer  "social"
+    #t.integer  "game"
+    #t.integer  "weather"
+
+
+
+    respond_to do |format|
+      format.json {render :json=>@apps }
+    end
+  end
+
+  private
+  def calculate_prob(app,counter_all)
+
+  case app.category
+      when "health"
+      return params[:health].to_f/counter_all
+    when "productivity"
+      return params[:productivity].to_f/counter_all
+    when "education"
+      return params[:education].to_f/counter_all
+    when "lifestyle"
+      return params[:lifestyle].to_f/counter_all
+    when "social"
+      return params[:social].to_f/counter_all
+    when "game"
+      return params[:game].to_f/counter_all
+    when "weather"
+      return params[:weather].to_f/counter_all
+    else
+      return 0
+    end
+  end
+
 
 end
