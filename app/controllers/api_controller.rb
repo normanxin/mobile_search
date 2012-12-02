@@ -117,7 +117,10 @@ class ApiController < ApplicationController
   def app_search_by_keyword
     query = "%"+params[:keyword]+"%"
 
-    @apps = App.where("name ILIKE ? OR description ILIKE ? OR publisher ILIKE ? OR category ILIKE ?",query,query,query,query)
+    # @apps = App.where("name ILIKE ? OR description ILIKE ? OR publisher ILIKE ? OR category ILIKE ?",query,query,query,query)
+    @apps_name = App.where("name ILIKE ?",query)
+    @apps_other = App.where("description ILIKE ? OR publisher ILIKE ? OR category ILIKE ?",query, query, query)
+    @apps = @apps_name + @apps_other
     #@apps = App.where("name ILIKE ?",query)
     #@apps = App.where("name LIKE ?",query)
     respond_to do |format|
@@ -146,7 +149,7 @@ class ApiController < ApplicationController
 
         @apps.each do |app|
            app[:weight] = calculate_prob(app,counter_all)
-          app[:counter_all] = counter_all
+          #app[:counter_all] = counter_all
         end
 
         @apps = @apps.sort_by{|a| -a[:weight]}
