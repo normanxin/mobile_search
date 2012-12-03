@@ -149,6 +149,10 @@ class ApiController < ApplicationController
 
         @apps.each do |app|
            app[:weight] = calculate_prob(app,counter_all)
+           if app.name =~ /#{params[:keyword]}/i
+              app[:weight] +=0.00001
+           end
+
           #app[:counter_all] = counter_all
         end
 
